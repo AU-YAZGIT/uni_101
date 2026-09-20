@@ -1,4 +1,4 @@
-# YAZGİT University 101 Rehberine Hoş Geldiniz! 🚀
+# YAZGİT Üniversite 101 Rehberine Hoş Geldiniz! 🚀
 
 Bu platform, **YAZGİT (Yapay Zeka ve Görüntü İşleme Topluluğu)** tarafından yeni gelen ve mevcut öğrenciler için hazırlanmış açık kaynaklı bir rehberdir.
 
