@@ -1,0 +1,27 @@
+name: Deploy MkDocs to Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repoyu Klonla
+        uses: actions/checkout@v4
+
+      - name: Python Kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: MkDocs Kur
+        run: pip install mkdocs-material
+
+      - name: GitHub Pages'e Yayinla
+        run: mkdocs gh-deploy --force

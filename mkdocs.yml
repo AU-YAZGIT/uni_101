@@ -1,0 +1,44 @@
+site_name: YAZGİT University 101
+site_description: Ankara Üniversitesi Öğrenci & Geliştirici Rehberi
+site_author: YAZGİT Proje Komitesi
+
+theme:
+  name: material
+  language: tr
+  font: false
+  palette:
+    # Aydınlık Mod
+    - scheme: default
+      primary: blue grey
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Koyu Moda Geç
+
+    # Karanlık Mod
+    - scheme: slate
+      primary: blue grey
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Açık Moda Geç
+  features:
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+extra_css:  # Meterial temasında beğenilmeyenleri değiştirmek için açtım
+  - stylesheets/extra.css
+
+# MENU
+nav:
+  - Ana Sayfa: index.md
+  - Topluluk:
+      - YAZGİT Nedir?: topluluk/yazgit-nedir.md
+      - İletişim & Kanallar: topluluk/iletisim.md
+  - Üniversite Hayatı:
+      - Yerleşkeler & Yaşam: universite/yerleskeler.md
+      - Akademik Bilgiler: universite/akademik-takvim.md
+  - Geliştirici Rehberi:
+      - Geliştirici Kiti Kurulumu: yazilim/gelistirici-kiti.md
+      - Önerilen Kaynaklar: yazilim/kaynaklar.md
