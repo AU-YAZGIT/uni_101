@@ -40,5 +40,6 @@ nav:
       - Yerleşkeler & Yaşam: universite/yerleskeler.md
       - Akademik Bilgiler: universite/akademik-takvim.md
   - Geliştirici Rehberi:
-      - Geliştirici Kiti Kurulumu: yazilim/gelistirici-kiti.md
+      - VS Code Kurulumu: yazilim/vscode-kurulumu.md
+      - Python Kurulumu: yazilim/python-kurulumu.md
       - Önerilen Kaynaklar: yazilim/kaynaklar.md
