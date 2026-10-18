@@ -51,13 +51,47 @@ markdown_extensions:
 # MENU
 nav:
   - Ana Sayfa: index.md
-  - Topluluk:
-      - YAZGİT Nedir?: topluluk/yazgit-nedir.md
-      - İletişim & Kanallar: topluluk/iletisim.md
-  - Üniversite Hayatı:
-      - Yerleşkeler & Yaşam: universite/yerleskeler.md
-      - Akademik Bilgiler: universite/akademik-takvim.md
-  - Geliştirici Rehberi:
-      - VS Code Kurulumu: yazilim/vscode-kurulumu.md
-      - Python Kurulumu: yazilim/python-kurulumu.md
+  - Başlangıç:
+      - İlk Hafta: baslangic/ilk-hafta.md
+      - Sık Sorulan Sorular: baslangic/sss.md
+      - Sözlük: baslangic/sozluk.md
+  - Kampüs:
+      - Yerleşkeler: kampus/yerleskeler.md
+      - Gölbaşı Kampüsü: kampus/golbasi.md
+      - Ulaşım: kampus/ulasim.md
+      - Yemekhane & Kütüphane: kampus/yemek-ve-kutuphane.md
+      - Barınma: kampus/barinma.md
+      - Kulüpler: kampus/kulupler.md
+      - Destek & Sağlık: kampus/destek-ve-saglik.md
+  - Akademik:
+      - Kayıt & OBS: akademik/kayit-ve-obs.md
+      - Sınav & Notlandırma: akademik/sinav-ve-notlandirma.md
+      - Yönetmelikler: akademik/yonetmelikler.md
+      - Akademik Takvim: akademik/akademik-takvim.md
+      - Bölümler: akademik/bolumler.md
+      - Ders Notları: akademik/ders-notlari.md
+  - Fırsatlar:
+      - Burslar: firsatlar/burslar.md
+      - Çift Anadal & Yandal: firsatlar/cift-anadal-yandal.md
+      - Erasmus & Farabi: firsatlar/erasmus-farabi.md
+      - Araştırma & Laboratuvarlar: firsatlar/arastirma-ve-laboratuvarlar.md
+      - Yarışmalar: firsatlar/yarismalar.md
+      - Ücretsiz Kaynaklar: firsatlar/ucretsiz-kaynaklar.md
+  - Kariyer:
+      - Staj: kariyer/staj.md
+      - CV & Mülakat: kariyer/cv-ve-mulakat.md
+      - Mezunlar: kariyer/mezunlar.md
+      - Mezuniyet Sonrası: kariyer/mezuniyet-sonrasi.md
+  - Yazılım:
+      - Yol Haritaları: yazilim/yol-haritasi.md
+      - "Kurulum: VS Code": yazilim/kurulum/vscode.md
+      - "Kurulum: Python": yazilim/kurulum/python.md
+      - "Kurulum: Git": yazilim/kurulum/git.md
+      - "Kurulum: Terminal": yazilim/kurulum/terminal.md
+      - "Kurulum: Sanal Ortam": yazilim/kurulum/venv.md
+      - "Kurulum: Jupyter & Colab": yazilim/kurulum/jupyter-colab.md
       - Önerilen Kaynaklar: yazilim/kaynaklar.md
+      - Sorun Giderme: yazilim/sorun-giderme.md
+  - Topluluk:
+      - YAZGİT: topluluk/yazgit.md
+      - Katkı: topluluk/katki.md
