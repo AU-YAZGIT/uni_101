@@ -10,3 +10,5 @@ config:
   MD041: false   # ilk satırın H1 olma zorunluluğu
   MD046: false   # girintili içerik: admonition ve sekmeler bunu tetikler
   MD007: false   # liste girintisi: sekme ve admonition içinde yanlış uyarı verir
+  MD051: false   # Türkçe İ/ı harfleri bağlantı parçalarında yanlış uyarı verir
+  MD060: false   # tablo stili: yeni ve kozmetik bir kural
