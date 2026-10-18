@@ -1,0 +1,10 @@
+globs:
+  - "docs/**/*.md"
+
+config:
+  default: true
+  MD013: false   # satır uzunluğu: Türkçe paragraflar uzun olabilir
+  MD033: false   # satır içi HTML'e izin ver
+  MD041: false   # ilk satırın H1 olma zorunluluğu
+  MD046: false   # girintili içerik: admonition ve sekmeler bunu tetikler
+  MD007: false   # liste girintisi: sekme ve admonition içinde yanlış uyarı verir

@@ -1,0 +1,8 @@
+timeout = 20
+max_retries = 2
+accept = [200, 206, 429]
+
+exclude = [
+  '^https://(www\.)?instagram\.com',
+  '^https://(www\.)?linkedin\.com',
+]

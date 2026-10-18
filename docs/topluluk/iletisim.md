@@ -8,6 +8,6 @@ Toplulukla iletişim kurabileceğiniz ve duyuruları takip edebileceğiniz resmi
 
 ## Katkı Sağlama
 
-Rehberde hatalı veya eksik bir bilgi görürseniz doğrudan GitHub üzerinden Pull Request (PR) açabilirsiniz. 
+Rehberde hatalı veya eksik bir bilgi görürseniz doğrudan GitHub üzerinden Pull Request (PR) açabilirsiniz.
 
 Ayrıntılar için [katkı rehberine](https://github.com/AU-YAZGIT/uni_101/blob/main/CONTRIBUTING.md) göz atın.

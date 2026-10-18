@@ -12,6 +12,7 @@ Visual Studio Code (VS Code), yazılım geliştirme projelerinde en yaygın kull
 
 > **Windows için Önemli Ayar:**  
 > Kurulum ekranındaki **"Ek Görevleri Seçin" (Select Additional Tasks)** adımında şu iki seçeneği mutlaka işaretleyin:  
+>
 > * **"Add 'Open with Code' action to Windows Explorer file context menu"**  
 > * **"Add 'Open with Code' action to Windows Explorer directory context menu"**  
 > Bu sayede bilgisayarınızdaki herhangi bir klasöre veya dosyaya sağ tıklayıp tek hamlede *"Code ile Aç"* diyebilirsiniz.
