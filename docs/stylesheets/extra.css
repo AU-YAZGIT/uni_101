@@ -1,73 +1,150 @@
 /* =======================================================
-   MODERN & TEMİZ TİPOGRAFİ (Dokümantasyon Standardı)
+   YAZGİT University 101: tema katmanı
+   Palet: Material "blue grey" + "teal" (özgün katkıcıların seçimi)
+   Topluluk sitesinin tipografi ve yüzey diline uyarlandı.
+   Not: genel sıfırlama (* { margin:0 }) bilerek alınmadı.
    ======================================================= */
-body, .md-typeset {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
-  line-height: 1.65 !important;
+
+:root {
+  --yazgit-teal: #00bfa5;
+  --yazgit-teal-dark: #00796b;
+  --yazgit-teal-light: #5eead4;
+  --yazgit-ink: #08161a;
+  --yazgit-pixel: "Pixelify Sans", var(--md-text-font-family), sans-serif;
 }
 
-/* Başlıkların Genel İskeleti */
+/* ---------- Aydınlık mod ---------- */
+[data-md-color-scheme="default"] {
+  /* Beyaz zeminde okunabilir koyu teal bağlantı rengi */
+  --md-typeset-a-color: #00796b;
+  --yazgit-title-grad: linear-gradient(90deg, #263238 0%, #263238 30%, #00796b 100%);
+}
+
+/* ---------- Karanlık mod ---------- */
+[data-md-color-scheme="slate"] {
+  --md-hue: 195;
+  --md-default-bg-color: #08161a;
+  --md-default-fg-color: #ffffff;
+  --md-default-fg-color--light: #d5e6e8;
+  --md-default-fg-color--lighter: #8fb0b5;
+  --md-default-fg-color--lightest: rgba(94, 234, 212, 0.16);
+  --md-typeset-color: #d5e6e8;
+  --md-typeset-a-color: #5eead4;
+  --md-code-bg-color: #0c1f24;
+  --md-code-fg-color: #d5e6e8;
+  --md-footer-bg-color: #061013;
+  --md-footer-bg-color--dark: #061013;
+  --yazgit-title-grad: linear-gradient(
+    90deg, #ffffff 0%, #ffffff 30%, #a7f3e6 60%, #5eead4 78%, #1de9b6 100%
+  );
+}
+
+/* Köşelerde teal ortam ışığı (yalnızca karanlık mod) */
+[data-md-color-scheme="slate"] body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(55% 45% at 88% 0%, rgba(0, 191, 165, 0.18) 0%, transparent 70%),
+    radial-gradient(45% 40% at 0% 100%, rgba(84, 110, 122, 0.2) 0%, transparent 70%);
+}
+
+/* ---------- Genel ---------- */
+::selection {
+  background: rgba(0, 191, 165, 0.35);
+  color: #ffffff;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--yazgit-teal-light);
+  outline-offset: 3px;
+}
+
+.md-typeset {
+  line-height: 1.7;
+}
+
+/* ---------- Üst çubuk ---------- */
+[data-md-color-scheme="slate"] .md-header {
+  background-color: rgba(8, 22, 26, 0.75);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  backdrop-filter: blur(14px) saturate(140%);
+  border-bottom: 1px solid rgba(94, 234, 212, 0.16);
+  box-shadow: none;
+}
+
+.md-header__title {
+  font-family: var(--yazgit-pixel);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.md-header__button.md-logo img {
+  height: 1.9rem;
+  width: auto;
+}
+
+/* ---------- Başlıklar ---------- */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  text-wrap: balance;
+}
+
 .md-typeset h1 {
-  font-weight: 700 !important;
-  font-size: 1.95rem !important;
-  letter-spacing: -0.02em !important;
-  margin-bottom: 1.2rem !important;
-  -webkit-text-stroke: 0 !important; /* Fazla yapay kalınlığı kaldır */
+  font-family: var(--yazgit-pixel);
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  margin: 0 0 1.2rem;
+  width: fit-content;
+  max-width: 100%;
+  color: var(--md-default-fg-color);
+  background: var(--yazgit-title-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  filter: drop-shadow(0 0 22px rgba(0, 191, 165, 0.35));
 }
 
 .md-typeset h2 {
-  font-weight: 650 !important;
-  font-size: 1.45rem !important;
-  letter-spacing: -0.015em !important;
-  margin-top: 2rem !important;
-  margin-bottom: 0.8rem !important;
-  padding-bottom: 0.35rem !important;
-  -webkit-text-stroke: 0 !important;
+  font-family: var(--yazgit-pixel);
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: 0.03em;
+  margin-top: 2.2rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color);
 }
 
 .md-typeset h3 {
-  font-weight: 600 !important;
-  font-size: 1.2rem !important;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
 }
 
-/* =======================================================
-   1. AYDINLIK MOD RENKLERİ
-   ======================================================= */
-[data-md-color-scheme="default"] .md-typeset h1 {
-  color: #0f172a !important; /* Slate 900: Modern, derin lacivert-siyah */
+/* ---------- Tablolar ve kod ---------- */
+.md-typeset table:not([class]) th {
+  background: rgba(0, 191, 165, 0.12);
+  color: var(--md-default-fg-color);
+  font-weight: 600;
 }
 
-[data-md-color-scheme="default"] .md-typeset h2 {
-  color: #1e293b !important;
-  border-bottom: 1px solid #e2e8f0 !important; /* İnce, kibar çizgi */
+.md-typeset code {
+  border-radius: 6px;
 }
 
-[data-md-color-scheme="default"] .md-typeset h3 {
-  color: #334155 !important;
-}
-
-[data-md-color-scheme="default"] .md-typeset p,
-[data-md-color-scheme="default"] .md-typeset li {
-  color: #334155 !important;
-}
-
-/* =======================================================
-   2. KARANLIK MOD RENKLERİ (Göz Yormayan Yüksek Kontrast)
-   ======================================================= */
-[data-md-color-scheme="slate"] .md-typeset h1 {
-  color: #f8fafc !important; /* Yumuşak buz beyazı */
-}
-
-[data-md-color-scheme="slate"] .md-typeset h2 {
-  color: #f1f5f9 !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-[data-md-color-scheme="slate"] .md-typeset h3 {
-  color: #e2e8f0 !important;
-}
-
-[data-md-color-scheme="slate"] .md-typeset p,
-[data-md-color-scheme="slate"] .md-typeset li {
-  color: #cbd5e1 !important; /* Mat gümüş tonu, göz almaz */
+/* ---------- Alt bilgi ---------- */
+[data-md-color-scheme="slate"] .md-footer {
+  background:
+    radial-gradient(60% 120% at 50% 100%, rgba(0, 191, 165, 0.16) 0%, rgba(84, 110, 122, 0.1) 45%, transparent 75%),
+    #061013;
+  border-top: 1px solid rgba(94, 234, 212, 0.16);
 }

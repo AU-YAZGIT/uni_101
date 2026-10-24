@@ -8,10 +8,14 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: tr
-  font: false
+  font:
+    text: Inter
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   palette:
     # Aydınlık Mod
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: blue grey
       accent: teal
       toggle:
@@ -19,7 +23,8 @@ theme:
         name: Koyu Moda Geç
 
     # Karanlık Mod
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: blue grey
       accent: teal
       toggle:
@@ -31,7 +36,9 @@ theme:
     - search.highlight
     - content.code.copy
     - content.action.edit
+
 extra_css:
+  - https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap
   - stylesheets/extra.css
 
 markdown_extensions:
