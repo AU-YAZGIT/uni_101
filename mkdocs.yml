@@ -42,4 +42,11 @@ nav:
   - Geliştirici Rehberi:
       - VS Code Kurulumu: yazilim/vscode-kurulumu.md
       - Python Kurulumu: yazilim/python-kurulumu.md
+      - Python Atölyesi: yazilim/python-atolyesi.md
       - Önerilen Kaynaklar: yazilim/kaynaklar.md
+  - Etkinlikler:
+      - Etkinlik Arşivi: etkinlikler/arsiv.md
+
+# Kopyalanabilir şablon; sitede yayınlanmaz
+exclude_docs: |
+  etkinlikler/_sablon.md
